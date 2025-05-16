@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: limegreen;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: limegreen;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 500;
+  margin-left: 3rem;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: limegreen;
+  border-bottom: 3px solid limegreen;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  color: limegreen;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 995px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+      top: 100%;
+      right: 9%;
+      background-color: white;
+      border: 2px solid limegreen;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: limegreen;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
+}
+
+.contact {
+  padding: 8rem 9% 5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.heading span {
+  color: limegreen;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.input-box input {
+  width: 48%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 2px solid limegreen;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: 2px solid limegreen;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+  resize: vertical;
+  color: black;
+}
+
+.contact-form .btn {
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 3rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 0.2rem solid limegreen;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  color: limegreen;
+}
+
+.social-icons a:hover {
+  background-color: limegreen;
+  color: white;
+  transform: scale(1.3) translateY(-5px);
+  box-shadow: 0 0 25px limegreen;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: white;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: limegreen;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid limegreen;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: limegreen;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 0 25px limegreen;
+}
+
+@media (max-width: 768px) {
+  .input-box input {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+}

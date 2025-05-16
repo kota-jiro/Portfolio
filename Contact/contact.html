@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="/Portfolio/Contact/contact.css" />
+    <title>Contact - Josh Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="/Portfolio/portfolio.html" class="logo">Josh</a>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <a href="/Portfolio/portfolio.html">Home</a>
+        <a href="/Portfolio/Services/services.html">Services</a>
+        <a href="/Portfolio/Skills/skills.html">Skills</a>
+        <a href="/Portfolio/Education/education.html">Education</a>
+        <a href="/Portfolio/Experiences/experiences.html">Experiences</a>
+        <a href="/Portfolio/Contact/contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+    <section class="contact">
+      <h2 class="heading">Get in <span>Touch</span></h2>
+
+      <form action="#" method="POST" class="contact-form">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="input-box">
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <a type="submit" class="btn">Send Message</a>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/joshmplay/"><i class="fa-brands fa-facebook" title="facebook"></i></a>
+        <a href="https://github.com/kota-jiro"><i class="fa-brands fa-github" title="github"></i></a>
+        <a href="https://www.instagram.com/joshmarkpd/"><i class="fa-brands fa-instagram" title="instagram"></i></a>
+        <a href="https://x.com/"><i class="fa-brands fa-twitter" title="twitter"></i></a>
+        <a href="https://discord.com/"><i class="fa-brands fa-discord" title="discord"></i></a>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

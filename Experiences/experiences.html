@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="/Portfolio/Experiences/experiences.css">
+    <title>Experiences - Josh Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="/Portfolio/portfolio.html" class="logo">Josh</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <a href="/Portfolio/portfolio.html">Home</a>
+            <a href="/Portfolio/Services/services.html">Services</a>
+            <a href="/Portfolio/Skills/skills.html">Skills</a>
+            <a href="/Portfolio/Education/education.html">Education</a>
+            <a href="/Portfolio/Experiences/experiences.html" class="active">Experiences</a>
+            <a href="/Portfolio/Contact/contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="experiences">
+        <h2 class="heading">My <span>Experiences</span></h2>
+
+    <div class="timeline">
+      <div class="experience-item">
+        <div class="exp-date">2024 - Present</div>
+        <div class="exp-content">
+          <h3>Freelance Web Developer</h3>
+          <p>Worked with small businesses to design and build custom websites using HTML, CSS, JavaScript, and Laravel.</p>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-date">2023 - 2024</div>
+        <div class="exp-content">
+          <h3>Intern - Software Developer</h3>
+          <p>Assisted with front-end development and backend API integration in a real-world Agile environment.</p>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-date">2022 - 2023</div>
+        <div class="exp-content">
+          <h3>School IT Assistant</h3>
+          <p>Maintained computer labs, installed software, and provided basic tech support during university projects.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+    </script>
+</body>
+</html>

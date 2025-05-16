@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Portfolio/home.css" />
+    <title>Josh Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="/Portfolio/portfolio.html" class="logo">Josh</a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav>
+        <a href="/Portfolio/portfolio.html" class="active">Home</a>
+        <a href="/Portfolio/Services/services.html">Services</a>
+        <a href="/Portfolio/Skills/skills.html">Skills</a>
+        <a href="/Portfolio/Education/education.html">Education</a>
+        <a href="/Portfolio/Experiences/experiences.html">Experiences</a>
+        <a href="/Portfolio/Contact/contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-img">
+        <img src="images/gradpic.jpg" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Josh</span></h1>
+        <p>
+          I'm Josh, a passionate and driven Software Engineer with a creative
+          eye for UI/UX Design and hands-on experience in Web Development. This
+          portfolio showcases my skills, projects, educational background, and
+          professional journey. Whether you're looking for a reliable developer,
+          a team collaborator, or someone who turns ideas into functional
+          digital experiences — you’ve come to the right place.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/joshmplay/"
+            ><i class="fa-brands fa-facebook" title="facebook"></i
+          ></a>
+          <a href="https://github.com/kota-jiro"
+            ><i class="fa-brands fa-github" title="github"></i
+          ></a>
+          <a href="https://www.instagram.com/joshmarkpd/"
+            ><i class="fa-brands fa-instagram" title="instagram"></i
+          ></a>
+          <a href="https://x.com/"
+            ><i class="fa-brands fa-twitter" title="twitter"></i
+          ></a>
+          <a href="https://discord.com/"
+            ><i class="fa-brands fa-discord" title="discord"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Hire me</a>
+      </div>
+    </section>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const nav = document.querySelector("nav");
+
+      menuIcon.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

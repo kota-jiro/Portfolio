@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Portfolio/Education/education.css" />
+    <title>Education - Josh Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="/Portfolio/portfolio.html" class="logo">Josh</a>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <a href="/Portfolio/portfolio.html">Home</a>
+        <a href="/Portfolio/Services/services.html">Services</a>
+        <a href="/Portfolio/Skills/skills.html">Skills</a>
+        <a href="/Portfolio/Education/education.html" class="active"
+          >Education</a
+        >
+        <a href="/Portfolio/Experiences/experiences.html">Experiences</a>
+        <a href="/Portfolio/Contact/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="education">
+      <h2 class="heading">My <span>Education</span></h2>
+      <div class="edu-container">
+        <div class="edu-box">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>ACLC College | 2021 - 2025</p>
+          <p>
+            Focused on software development, data structures, networking, and
+            capstone in edge computing integration.
+          </p>
+        </div>
+        <div class="edu-box">
+          <i class="fas fa-school"></i>
+          <h3>Senior High School - ICT</h3>
+          <p>ACLC College | 2019 - 2021</p>
+          <p>
+            Graduated with honors. Specialized in programming fundamentals,
+            mathematics, and physics.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

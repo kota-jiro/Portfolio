@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: limegreen;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: limegreen;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 500;
+    margin-left: 3rem;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+    color:limegreen;
+    border-bottom: 3px solid limegreen;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.5rem;
+    color: limegreen;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  @media (max-width: 995px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    nav {
+      position: absolute;
+      top: 100%;
+      right: 9%;
+      background-color: white;
+      border: 2px solid limegreen;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    nav a {
+      display: block;
+      margin: 1rem 0;
+      font-size: 1.6rem;
+    }
+  
+    nav a:hover,
+    nav a.active {
+      background-color: limegreen;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+  
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.education {
+    padding: 8rem 9% 5rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.heading span {
+    color: limegreen;
+}
+
+.edu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.edu-box {
+    background-color: #f9f9f9;
+    border-left: 5px solid limegreen;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.edu-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px limegreen;
+}
+
+.edu-box i {
+    font-size: 3rem;
+    color: limegreen;
+    margin-bottom: 1rem;
+}
+
+.edu-box h3 {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.edu-box p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .edu-box {
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
