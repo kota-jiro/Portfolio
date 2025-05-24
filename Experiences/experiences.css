@@ -109,6 +109,10 @@ nav a.active {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
   }
+  .heading {
+    
+    margin-top: 1rem;
+  }
 }
 
 section {
